@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>To-Do List</h1>
+  
+  <div class="form-box">
+    <h2>Create Task </h2>
+    <input type="text" id="taskName" placeholder="Task name">
+    <input type="date" id="deadline">
+    <select id="priority">
+      <option value="high">High</option>
+      <option value="medium">Medium</option>
+      <option value="low">Low</option>
+    </select>
+    <button onclick="addTask()">Add Task</button>
+  </div>
+  <h2>Your Tasks</h2>
+  <div class="form-box">
+   
+    <ul id="taskList">
+      <!-- Task items will be dynamically added here -->
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
